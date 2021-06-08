@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "linkedin-savings-app",
-    "slug": "linkedin-savings-app",
+    "name": "Firebase Login Template",
+    "slug": "firebase-login-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
