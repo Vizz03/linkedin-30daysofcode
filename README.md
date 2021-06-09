@@ -1,3 +1,3 @@
-**#30daysofcode 
+# #30daysofcode
 
-Builing a savings tracker application using React Native.
+## Builing a savings tracker application using React Native.
