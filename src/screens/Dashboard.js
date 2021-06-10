@@ -2,33 +2,29 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Background from '../components/Background'
 import Logo from '../components/Logo'
-import Header from '../components/Header'
+//import Header from '../components/Header'
 import Paragraph from '../components/Paragraph'
-import Button from '../components/Button'
+//import Button from '../components/Button'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { logoutUser } from '../api/auth-api'
 import Ionicons from '@expo/vector-icons/Ionicons'
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Root } from 'native-base';
+
+import Home from './HomeScreen'
+import Settings from './AccountScreen'
 
 const Dashboard = () => {
   function HomeScreen() {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>This is where the Savings data will come</Text>
-      </View>
+      <Home/>
+
     )
   }
 
   function SettingsScreen() {
     return (
-      <Background>
-        <Logo />
-        <Header>Account Settings</Header>
-        <Paragraph>This is where account settings will come</Paragraph>
-        <Button mode="outlined" onPress={logoutUser}>
-          Logout
-        </Button>
-      </Background>
+    <Settings/>
     )
   }
 
@@ -63,4 +59,12 @@ const Dashboard = () => {
 
 export default Dashboard
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  amount:{
+    fontSize: 40,
+  },
+  buttonContainer: {
+    flexDirection : "row",
+    marginHorizontal : 10
+  }
+})
